@@ -1,0 +1,14 @@
+prefix=H:/Tool/ITK-5.4.2/bin
+exec_prefix=${prefix}
+symbol_prefix=itkzlib_
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include/ITK-5.4/itkzlib-ng
+
+Name: zlib
+Description: zlib-ng compression library
+Version: 1.3.0.zlib-ng
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir} -DWITH_GZFILEOP
